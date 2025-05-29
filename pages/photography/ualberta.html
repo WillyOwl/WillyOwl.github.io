@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAlberta Photography - Willy Zuo</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Willy Zuo</div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="../../pages/about.html" class="nav-link" data-page="about">About Me</a></li>
+            <li><a href="../../pages/projects.html" class="nav-link" data-page="projects">Projects</a></li>
+            <li><a href="../../pages/photography.html" class="nav-link active" data-page="photography">Photography</a></li>
+            <li><a href="../../pages/reading.html" class="nav-link" data-page="reading">Reading</a></li>
+            <li><a href="../../pages/blog.html" class="nav-link" data-page="blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <section class="section photography-section">
+            <h1>UAlberta Photography</h1>
+            <div class="breadcrumb">
+                <a href="../photography.html">Photography</a> > UAlberta
+            </div>
+            
+            <div class="photo-gallery">
+                <!-- Example of how to add photos. Replace src with your actual image paths -->
+                <div class="photo-item" data-category="campus">
+                    <img src="../../images/photography/ualberta/sample1.jpg" alt="Main Quad">
+                    <div class="photo-info">
+                        <h3>Main Quad</h3>
+                        <p>The historic Main Quad surrounded by classic architecture</p>
+                        <div class="photo-metadata">
+                            <span class="date">Date: 2024</span>
+                            <span class="location">Location: Main Quad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" data-category="buildings">
+                    <img src="../../images/photography/ualberta/sample2.jpg" alt="Rutherford Library">
+                    <div class="photo-info">
+                        <h3>Rutherford Library</h3>
+                        <p>The historic Rutherford Library in winter</p>
+                        <div class="photo-metadata">
+                            <span class="date">Date: 2024</span>
+                            <span class="location">Location: Rutherford Library</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more photo items following this structure:
+                <div class="photo-item" data-category="your-category">
+                    <img src="../../images/photography/ualberta/your-image.jpg" alt="Description">
+                    <div class="photo-info">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                        <div class="photo-metadata">
+                            <span class="date">Date: YYYY</span>
+                            <span class="location">Location: Specific location</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- Lightbox for photo viewing -->
+            <div class="lightbox" id="photoLightbox">
+                <span class="lightbox-close">&times;</span>
+                <img class="lightbox-content" id="lightboxImage">
+                <div class="lightbox-caption">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxDescription"></p>
+                    <div class="lightbox-metadata">
+                        <span id="lightboxDate"></span>
+                        <span id="lightboxLocation"></span>
+                    </div>
+                </div>
+                <button class="lightbox-nav prev">&lt;</button>
+                <button class="lightbox-nav next">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/photography.js"></script>
+</body>
+</html> 

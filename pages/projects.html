@@ -1,0 +1,61 @@
+<section class="section">
+    <h1>Projects</h1>
+    <div class="content">
+        <div class="projects-grid">
+            <!-- Add your projects here -->
+            <div class="project-card">
+                <h2>Single-Cycle CPU</h2>
+                <p>This project involved designing and implementing a simulator for a single-cycle CPU using the C programming language. The simulator replicates key functionalities of MIPS processors, focusing on instruction execution and data handling. It incorporates the principles of datapath and control signals, demonstrating how data flows through CPU components and how control signals coordinate operations. By leveraging bitwise operations, the simulator accurately emulates the logical and arithmetic processes of a real CPU, offering a realistic representation of hardware-level computations.</p>
+                <a href="https://github.com/WillyOwl/SE230-231-Computer-Organization/tree/main/Lab/1st%20lab" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .project-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-card h2 {
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .project-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    .project-link {
+        display: inline-flex;
+        align-items: center;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .project-link i {
+        margin-right: 0.5rem;
+    }
+
+    .project-link:hover {
+        color: #0056b3;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+</style> 

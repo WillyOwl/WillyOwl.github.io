@@ -1,1 +1,33 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willy Zuo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Willy Zuo</div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="/about" class="nav-link" data-page="about">About Me</a></li>
+            <li><a href="/projects" class="nav-link" data-page="projects">Projects</a></li>
+            <li><a href="/photography" class="nav-link" data-page="photography">Photography</a></li>
+            <li><a href="/reading" class="nav-link" data-page="reading">Reading</a></li>
+            <li><a href="/blog" class="nav-link" data-page="blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <!-- Content will be loaded here dynamically -->
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/photography.js"></script>
+    <script src="scripts/blog.js"></script>
+</body>
+</html> 
